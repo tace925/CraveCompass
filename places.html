@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Directory | The Food Curator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>The Food Curator</h1>
+            <span>by Triazh Njeri</span>
+        </div>
+        
+        <!-- HER PHOTO AT THE TOP -->
+        <div class="profile-section">
+            <img src="images/Trizah.jpg" alt="Trizah Njeri" class="profile-photo" onerror="this.src='https://via.placeholder.com/50/3b82f6/ffffff?text=Her'">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="places.html">Food Places</a></li>
+                    <li><a href="varieties.html">Food Varieties</a></li>
+                    <li><a href="meals.html">Meal Ideas</a></li>
+                    <li><a href="work.html">Her Work</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <!-- MAN CITS LOGO -->
+        <div style="text-align: right; margin-bottom: 1rem;">
+            <span class="man-cits-small">MAN CITS</span>
+        </div>
+
+        <div class="section-header">
+            <h3>🍽️ Food Directory 🍽️</h3>
+            <p>Curated food places for every occasion - by Trizah Njeri</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search restaurants, cuisines, locations...">
+            <button class="search-btn">🔍</button>
+        </div>
+        <div id="searchResultsCount" style="text-align: center; margin-bottom: 1rem; color: var(--medium-blue);"></div>
+
+        <!-- Category Tabs -->
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All Places</button>
+            <button class="tab-btn" data-category="breakfast">🍳 Breakfast</button>
+            <button class="tab-btn" data-category="lunch">🥗 Lunch</button>
+            <button class="tab-btn" data-category="dinner">🍽️ Dinner</button>
+            <button class="tab-btn" data-category="supper">🌙 Supper</button>
+            <button class="tab-btn" data-category="picnic">🧺 Picnic</button>
+            <button class="tab-btn" data-category="malls">🛍️ Malls</button>
+        </div>
+
+        <!-- Restaurants Grid -->
+        <div class="card-grid">
+            <!-- Breakfast Places -->
+            <div class="card category-item searchable-item" data-category="breakfast">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Breakfast</span>
+                </div>
+                <div class="card-content">
+                    <h4>Sunrise Café</h4>
+                    <div class="rating" data-rating="5"></div>
+                    <p>Best pancakes in town! Their maple syrup is homemade, and the coffee is locally roasted. Try the eggs benedict - it's legendary.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Downtown</span>
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">💰 $$</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <div class="card category-item searchable-item" data-category="breakfast">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Breakfast</span>
+                </div>
+                <div class="card-content">
+                    <h4>The Baker's Son</h4>
+                    <div class="rating" data-rating="4.5"></div>
+                    <p>Fresh pastries daily! Their croissants are flaky and buttery. Great spot for a quick breakfast on the go.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Midtown</span>
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">💰 $</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <!-- Lunch Places -->
+            <div class="card category-item searchable-item" data-category="lunch">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Lunch</span>
+                </div>
+                <div class="card-content">
+                    <h4>The Green Bowl</h4>
+                    <div class="rating" data-rating="5"></div>
+                    <p>Healthy and delicious! Build-your-own salad bowls with fresh ingredients. Their quinoa bowl is a favorite.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Financial District</span>
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">💰 $$</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <div class="card category-item searchable-item" data-category="lunch">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Lunch</span>
+                </div>
+                <div class="card-content">
+                    <h4>Sandwich Spot</h4>
+                    <div class="rating" data-rating="4"></div>
+                    <p>Classic deli sandwiches made to order. The Reuben is amazing! Quick service for lunch break.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Downtown</span>
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">💰 $</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <!-- Dinner Places -->
+            <div class="card category-item searchable-item" data-category="dinner">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Dinner</span>
+                </div>
+                <div class="card-content">
+                    <h4>Ocean Blue</h4>
+                    <div class="rating" data-rating="5"></div>
+                    <p>Fresh seafood with ocean view. Their grilled fish and lobster are exceptional. Romantic atmosphere.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Waterfront</span>
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">💰 $$$</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <div class="card category-item searchable-item" data-category="dinner">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Dinner</span>
+                </div>
+                <div class="card-content">
+                    <h4>La Bella Italia</h4>
+                    <div class="rating" data-rating="4.5"></div>
+                    <p>Authentic Italian cuisine. Handmade pasta, wood-fired pizza, and an extensive wine list.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Little Italy</span>
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">💰 $$$</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <!-- Supper Places (Late Night) -->
+            <div class="card category-item searchable-item" data-category="supper">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Supper / Late Night</span>
+                </div>
+                <div class="card-content">
+                    <h4>Midnight Diner</h4>
+                    <div class="rating" data-rating="4"></div>
+                    <p>Open till 3am! Classic diner food - burgers, fries, milkshakes. Perfect after a night out.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Entertainment District</span>
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">💰 $</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <div class="card category-item searchable-item" data-category="supper">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1572802419224-296b0aeee0d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Supper</span>
+                </div>
+                <div class="card-content">
+                    <h4>Pizza After Dark</h4>
+                    <div class="rating" data-rating="4.5"></div>
+                    <p>Late night pizza by the slice. Fresh until 2am. Their pepperoni is perfect.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Downtown</span>
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">💰 $</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <!-- Picnic Spots -->
+            <div class="card category-item searchable-item" data-category="picnic">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1506462945848-ac7eb50550ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Picnic Spot</span>
+                </div>
+                <div class="card-content">
+                    <h4>Lakeside Park</h4>
+                    <div class="rating" data-rating="5"></div>
+                    <p>Beautiful lake views, shaded areas, and clean facilities. Perfect for family picnics.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Lakeshore</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <div class="card category-item searchable-item" data-category="picnic">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Picnic Spot</span>
+                </div>
+                <div class="card-content">
+                    <h4>Botanical Gardens</h4>
+                    <div class="rating" data-rating="4.5"></div>
+                    <p>Beautiful gardens with designated picnic areas. Very peaceful and scenic.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Northside</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <!-- Malls with Food Courts -->
+            <div class="card category-item searchable-item" data-category="malls">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1581417478175-a9ef18f210c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Mall Food Court</span>
+                </div>
+                <div class="card-content">
+                    <h4>City Center Mall</h4>
+                    <div class="rating" data-rating="4"></div>
+                    <p>Huge food court with 20+ options. Something for everyone - Asian, Italian, Fast Food, Desserts.</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Downtown</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+
+            <div class="card category-item searchable-item" data-category="malls">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1513884923967-4b182ef967ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <span class="badge">Mall Food Court</span>
+                </div>
+                <div class="card-content">
+                    <h4>Westfield Plaza</h4>
+                    <div class="rating" data-rating="4.5"></div>
+                    <p>Upscale food court with gourmet options. Great sushi and ramen place!</p>
+                    <div style="margin-bottom: 1rem;">
+                        <span style="background: var(--sky-soft); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">📍 Westside</span>
+                    </div>
+                    <a href="#" class="card-link">View on Google Maps →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Man Cits Section -->
+        <div class="man-cits-section">
+            <div class="man-cits-logo">
+                MAN CITS
+                <span>Making Technology Simple</span>
+            </div>
+            <p class="man-cits-sub">Curated with professional standards</p>
+        </div>
+
+        <!-- Suggest a Place CTA -->
+        <div style="text-align: center; margin: 4rem 0; background: var(--white); padding: 3rem; border-radius: 30px; box-shadow: 0 10px 30px var(--shadow);">
+            <h4 style="color: var(--deep-blue); font-size: 2rem; margin-bottom: 1rem;">Know a great place?</h4>
+            <p style="margin-bottom: 2rem; font-size: 1.2rem;">Help [HerName] discover more amazing food spots!</p>
+            <a href="contact.html" class="btn" style="font-size: 1.2rem; padding: 1rem 3rem;">Suggest a Place →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">The Food Curator</div>
+                <p>Curated with love by [HerName]</p>
+                <p>Food Production Professional</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Her</a></li>
+                    <li><a href="places.html">Food Directory</a></li>
+                    <li><a href="varieties.html">Food Varieties</a></li>
+                    <li><a href="contact.html">Suggest a Place</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="places.html?cat=breakfast">Breakfast</a></li>
+                    <li><a href="places.html?cat=lunch">Lunch</a></li>
+                    <li><a href="places.html?cat=dinner">Dinner</a></li>
+                    <li><a href="places.html?cat=picnic">Picnic Spots</a></li>
+                    <li><a href="places.html?cat=malls">Malls</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© <span class="current-year">2025</span> The Food Curator. All rights reserved.</p>
+            <p>Made with 💙 for Trizah Njeri | MAN CITS</p>
+        </div>
+        <div class="developer-credit">
+    <p>🍽️ Developed with 💙 by <strong>Tevin Mulinge</strong>  <span class="man-cits-small" style="background: transparent; padding: 0;">MAN CITS</span></p>
+</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

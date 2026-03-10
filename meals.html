@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Ideas | The Food Curator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>The Food Curator</h1>
+            <span>by Trizah Njeri</span>
+        </div>
+        
+        <!-- HER PHOTO AT THE TOP -->
+        <div class="profile-section">
+            <img src="images/Trizah.jpg" alt="Trizah Njeri" class="profile-photo" onerror="this.src='https://via.placeholder.com/50/3b82f6/ffffff?text=Her'">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="places.html">Food Places</a></li>
+                    <li><a href="varieties.html">Food Varieties</a></li>
+                    <li><a href="meals.html">Meal Ideas</a></li>
+                    <li><a href="work.html">Her Work</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+    <main>
+        <!-- MAN CITS LOGO -->
+        <div style="text-align: right; margin-bottom: 1rem;">
+            <span class="man-cits-small">MAN CITS</span>
+        </div>
+
+        <div class="section-header">
+            <h3>🍽️ Meal Ideas & Inspiration 🍽️</h3>
+            <p>What to eat for every occasion - curated by Trizah Njeri</p>
+        </div>
+
+        <!-- Meal Time Filters -->
+        <div class="category-tabs" style="margin-bottom: 3rem;">
+            <button class="tab-btn meal-filter-btn active" data-meal="all">All Meals</button>
+            <button class="tab-btn meal-filter-btn" data-meal="breakfast">🍳 Breakfast</button>
+            <button class="tab-btn meal-filter-btn" data-meal="lunch">🥗 Lunch</button>
+            <button class="tab-btn meal-filter-btn" data-meal="dinner">🍽️ Dinner</button>
+            <button class="tab-btn meal-filter-btn" data-meal="supper">🌙 Supper</button>
+            <button class="tab-btn meal-filter-btn" data-meal="snacks">🍪 Snacks</button>
+            <button class="tab-btn meal-filter-btn" data-meal="picnic">🧺 Picnic</button>
+        </div>
+
+        <!-- BREAKFAST SECTION -->
+        <section class="meal-section" data-meal="breakfast">
+            <div class="meal-time-header">
+                <span class="meal-icon">🍳</span>
+                <h4>Breakfast Ideas</h4>
+            </div>
+            
+            <div class="meal-list">
+                <div class="meal-item searchable-item">
+                    <h5>Classic American Breakfast</h5>
+                    <p>Eggs (any style), bacon or sausage, toast, and hash browns. Add pancakes if you're hungry!</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Quick</span>
+                        <span class="meal-tag">Classic</span>
+                        <span class="meal-tag">Hearty</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Avocado Toast</h5>
+                    <p>Sourdough bread topped with mashed avocado, poached eggs, chili flakes, and lemon juice.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Healthy</span>
+                        <span class="meal-tag">Trendy</span>
+                        <span class="meal-tag">Vegetarian</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>French Toast</h5>
+                    <p>Thick bread dipped in egg mixture, fried until golden. Top with maple syrup, berries, and powdered sugar.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Sweet</span>
+                        <span class="meal-tag">Weekend</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Healthy Smoothie Bowl</h5>
+                    <p>Blend frozen bananas, berries, and yogurt. Top with granola, coconut, and fresh fruit.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Healthy</span>
+                        <span class="meal-tag">Quick</span>
+                        <span class="meal-tag">Vegan option</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Breakfast Burrito</h5>
+                    <p>Flour tortilla filled with scrambled eggs, cheese, beans, salsa, and avocado.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Hearty</span>
+                        <span class="meal-tag">On-the-go</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Oatmeal with Toppings</h5>
+                    <p>Warm oatmeal topped with banana, berries, nuts, honey, and cinnamon.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Healthy</span>
+                        <span class="meal-tag">Comfort</span>
+                        <span class="meal-tag">Winter</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LUNCH SECTION -->
+        <section class="meal-section" data-meal="lunch">
+            <div class="meal-time-header">
+                <span class="meal-icon">🥗</span>
+                <h4>Lunch Ideas</h4>
+            </div>
+            
+            <div class="meal-list">
+                <div class="meal-item searchable-item">
+                    <h5>Grain Bowl</h5>
+                    <p>Base of quinoa or brown rice, topped with roasted vegetables, chickpeas, avocado, and tahini dressing.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Healthy</span>
+                        <span class="meal-tag">Vegetarian</span>
+                        <span class="meal-tag">Meal prep</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Classic Sandwich</h5>
+                    <p>Your choice of bread with turkey/roast beef, cheese, lettuce, tomato, and mustard/mayo.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Quick</span>
+                        <span class="meal-tag">Classic</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Caesar Salad</h5>
+                    <p>Romaine lettuce, croutons, parmesan, and creamy Caesar dressing. Add grilled chicken for protein.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Light</span>
+                        <span class="meal-tag">Classic</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Sushi Lunch</h5>
+                    <p>Assorted rolls, miso soup, and edamame. Fresh and satisfying.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Light</span>
+                        <span class="meal-tag">Fresh</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Soup & Half Sandwich</h5>
+                    <p>Classic combo - tomato soup with grilled cheese or turkey club.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Comfort</span>
+                        <span class="meal-tag">Classic</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Leftovers Remix</h5>
+                    <p>Transform last night's dinner into a new lunch - turn roasted veggies into a wrap, or meat into a salad.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Budget</span>
+                        <span class="meal-tag">Creative</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DINNER SECTION -->
+        <section class="meal-section" data-meal="dinner">
+            <div class="meal-time-header">
+                <span class="meal-icon">🍽️</span>
+                <h4>Dinner Ideas</h4>
+            </div>
+            
+            <div class="meal-list">
+                <div class="meal-item searchable-item">
+                    <h5>Grilled Salmon</h5>
+                    <p>Salmon fillet with lemon and herbs, served with roasted asparagus and wild rice.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Healthy</span>
+                        <span class="meal-tag">Impressive</span>
+                        <span class="meal-tag">30-min</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Homemade Pizza</h5>
+                    <p>Pizza dough topped with sauce, mozzarella, and your favorite toppings. Fun to make together!</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Fun</span>
+                        <span class="meal-tag">Family</span>
+                        <span class="meal-tag">Customizable</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Pasta Night</h5>
+                    <p>Choose your pasta - spaghetti with meatballs, fettuccine alfredo, or penne arrabbiata.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Comfort</span>
+                        <span class="meal-tag">Italian</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Stir Fry</h5>
+                    <p>Quick and easy - protein and vegetables stir-fried with soy sauce, garlic, and ginger. Serve with rice.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Quick</span>
+                        <span class="meal-tag">Healthy</span>
+                        <span class="meal-tag">Asian</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Taco Tuesday</h5>
+                    <p>Soft or hard tacos with seasoned meat, lettuce, cheese, salsa, and sour cream.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Fun</span>
+                        <span class="meal-tag">Mexican</span>
+                        <span class="meal-tag">Family</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Roast Chicken</h5>
+                    <p>Whole roasted chicken with herbs, served with roasted potatoes and vegetables.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Sunday dinner</span>
+                        <span class="meal-tag">Comfort</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPER SECTION (Late Night) -->
+        <section class="meal-section" data-meal="supper">
+            <div class="meal-time-header">
+                <span class="meal-icon">🌙</span>
+                <h4>Supper / Late Night Ideas</h4>
+            </div>
+            
+            <div class="meal-list">
+                <div class="meal-item searchable-item">
+                    <h5>Midnight Snack Board</h5>
+                    <p>Assorted cheese, crackers, fruits, and nuts. Perfect for sharing.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Light</span>
+                        <span class="meal-tag">Shareable</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Ramen</h5>
+                    <p>Quick instant ramen upgraded with egg, green onions, and leftover meat.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Quick</span>
+                        <span class="meal-tag">Comfort</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Grilled Cheese & Tomato Soup</h5>
+                    <p>Classic comfort combo that hits the spot any time.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Comfort</span>
+                        <span class="meal-tag">Quick</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Leftovers</h5>
+                    <p>Sometimes the best late night snack is yesterday's dinner!</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Easy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SNACKS SECTION -->
+        <section class="meal-section" data-meal="snacks">
+            <div class="meal-time-header">
+                <span class="meal-icon">🍪</span>
+                <h4>Snack Ideas</h4>
+            </div>
+            
+            <div class="meal-list">
+                <div class="meal-item searchable-item">
+                    <h5>Healthy Snack Box</h5>
+                    <p>Apple slices with peanut butter, carrot sticks with hummus, and a handful of almonds.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Healthy</span>
+                        <span class="meal-tag">Work snack</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Trail Mix</h5>
+                    <p>Mix of nuts, dried fruit, chocolate chips, and pretzels.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">On-the-go</span>
+                        <span class="meal-tag">Energy</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Greek Yogurt Parfait</h5>
+                    <p>Greek yogurt layered with granola and fresh berries.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Healthy</span>
+                        <span class="meal-tag">Protein</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Popcorn</h5>
+                    <p>Air-popped popcorn with nutritional yeast or your favorite seasonings.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Low-calorie</span>
+                        <span class="meal-tag">Movie night</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Energy Balls</h5>
+                    <p>No-bake bites made with oats, peanut butter, honey, and chocolate chips.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Make ahead</span>
+                        <span class="meal-tag">Healthy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PICNIC SECTION -->
+        <section class="meal-section" data-meal="picnic">
+            <div class="meal-time-header">
+                <span class="meal-icon">🧺</span>
+                <h4>Picnic Ideas</h4>
+            </div>
+            
+            <div class="meal-list">
+                <div class="meal-item searchable-item">
+                    <h5>Classic Picnic</h5>
+                    <p>Sandwiches, fresh fruit, cheese, crackers, and lemonade.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Easy</span>
+                        <span class="meal-tag">Classic</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>French Picnic</h5>
+                    <p>Baguette, brie, grapes, pâté, and a bottle of sparkling water.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Elegant</span>
+                        <span class="meal-tag">Romantic</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Finger Foods Picnic</h5>
+                    <p>Mini quiches, chicken skewers, veggie sticks with dip, and fruit skewers.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Easy to eat</span>
+                        <span class="meal-tag">Party</span>
+                    </div>
+                </div>
+                
+                <div class="meal-item searchable-item">
+                    <h5>Breakfast Picnic</h5>
+                    <p>Muffins, fresh fruit, yogurt cups, and iced coffee.</p>
+                    <div class="meal-tags">
+                        <span class="meal-tag">Morning</span>
+                        <span class="meal-tag">Fun</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAN CITS SECTION -->
+        <div class="man-cits-section">
+            <div class="man-cits-logo">
+                MAN CITS
+                <span>Making Technology Simple</span>
+            </div>
+            <p class="man-cits-sub">Inspired by [Trizah Njeri]'s food production expertise</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">The Food Curator</div>
+                <p>Curated with love by [HerName]</p>
+                <p>Food Production Professional</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Her</a></li>
+                    <li><a href="places.html">Food Directory</a></li>
+                    <li><a href="meals.html">Meal Ideas</a></li>
+                    <li><a href="contact.html">Suggest a Place</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow</h4>
+                <ul>
+                    <li><a href="videos.html">YouTube Picks</a></li>
+                    <li><a href="portfolio.html">Her Work</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© <span class="current-year">2025</span> The Food Curator. All rights reserved.</p>
+            <p>Made with 💙 for TRizah Njeri | MAN CITS</p>
+        </div>
+        <div class="developer-credit">
+    <p>🍽️ Developed with 💙 by <strong>Trizah Njeri</strong> <span class="man-cits-small" style="background: transparent; padding: 0;">MAN CITS</span></p>
+</div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

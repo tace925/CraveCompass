@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Picks | The Food Curator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>The Food Curator</h1>
+            <span>by Trizah Njeri</span>
+        </div>
+        
+        <!-- HER PHOTO AT THE TOP -->
+        <div class="profile-section">
+            <img src="images/Trizah.jpg" alt="Trizah Njeri" class="profile-photo" onerror="this.src='https://via.placeholder.com/50/3b82f6/ffffff?text=Her'">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="places.html">Food Places</a></li>
+                    <li><a href="varieties.html">Food Varieties</a></li>
+                    <li><a href="meals.html">Meal Ideas</a></li>
+                    <li><a href="work.html">Her Work</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <!-- MAN CITS LOGO -->
+        <div style="text-align: right; margin-bottom: 1rem;">
+            <span class="man-cits-small">MAN CITS</span>
+        </div>
+
+        <div class="section-header">
+            <h3>📺 Trizah Njeri's YouTube Picks 📺</h3>
+            <p>Curated food channels and videos for learning and inspiration</p>
+        </div>
+
+        <!-- Featured Video -->
+        <div style="margin-bottom: 4rem; background: var(--white); border-radius: 30px; padding: 2rem; box-shadow: 0 20px 40px var(--shadow);">
+            <h4 style="color: var(--deep-blue); margin-bottom: 1.5rem; text-align: center;">🌟 Video of the Week 🌟</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+                <div>
+                    <div style="background: linear-gradient(135deg, var(--medium-blue), var(--deep-blue)); border-radius: 20px; padding: 2rem; text-align: center; color: white;">
+                        <div style="font-size: 5rem; margin-bottom: 1rem;">▶️</div>
+                        <h5 style="color: white; font-size: 1.5rem;">Food Science Explained</h5>
+                        <p>by FoodUnfolded</p>
+                    </div>
+                </div>
+                <div>
+                    <h5 style="font-size: 1.5rem; margin-bottom: 1rem;">Why Trizah Njeri loves this:</h5>
+                    <p style="margin-bottom: 1.5rem;">"This channel perfectly explains the science behind everyday cooking. It's educational, engaging, and beautifully produced - exactly what aspiring food professionals need."</p>
+                    <a href="#" class="btn" target="_blank">Watch on YouTube →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All Channels</button>
+            <button class="tab-btn" data-category="cooking">👨‍🍳 Cooking</button>
+            <button class="tab-btn" data-category="science">🔬 Food Science</button>
+            <button class="tab-btn" data-category="reviews">🍽️ Restaurant Reviews</button>
+            <button class="tab-btn" data-category="travel">✈️ Food Travel</button>
+        </div>
+
+        <!-- Video Grid -->
+        <div class="video-grid">
+            <!-- Cooking Channels -->
+            <div class="video-card category-item" data-category="cooking">
+                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="play-button" data-video-url="https://youtube.com/watch?v=example1">▶️</div>
+                </div>
+                <div class="video-info">
+                    <h4>Bon Appétit</h4>
+                    <p class="channel-name">@bonappetit</p>
+                    <p>Test kitchen videos, recipes, and food challenges. Perfect for home cooks.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="badge">Cooking</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card category-item" data-category="cooking">
+                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="play-button" data-video-url="https://youtube.com/watch?v=example2">▶️</div>
+                </div>
+                <div class="video-info">
+                    <h4>Babish Culinary Universe</h4>
+                    <p class="channel-name">@babish</p>
+                    <p>Recreating famous dishes from movies and TV. Great technique explanations.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="badge">Cooking</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Science -->
+            <div class="video-card category-item" data-category="science">
+                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="play-button" data-video-url="https://youtube.com/watch?v=example3">▶️</div>
+                </div>
+                <div class="video-info">
+                    <h4>Food Unfolded</h4>
+                    <p class="channel-name">@foodunfolded</p>
+                    <p>The science behind your food. Perfect for food production students!</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="badge">Food Science</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card category-item" data-category="science">
+                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="play-button" data-video-url="https://youtube.com/watch?v=example4">▶️</div>
+                </div>
+                <div class="video-info">
+                    <h4>HarvardX Science & Cooking</h4>
+                    <p class="channel-name">@harvardx</p>
+                    <p>University-level lectures on food science from Harvard professors.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="badge">Food Science</span>
+                        <span class="badge">Educational</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant Reviews -->
+            <div class="video-card category-item" data-category="reviews">
+                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="play-button" data-video-url="https://youtube.com/watch?v=example5">▶️</div>
+                </div>
+                <div class="video-info">
+                    <h4>Mark Wiens</h4>
+                    <p class="channel-name">@markwiens</p>
+                    <p>The ultimate food traveler. Authentic reviews and street food adventures.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="badge">Reviews</span>
+                        <span class="badge">Travel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card category-item" data-category="reviews">
+                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="play-button" data-video-url="https://youtube.com/watch?v=example6">▶️</div>
+                </div>
+                <div class="video-info">
+                    <h4>Strictly Dumpling</h4>
+                    <p class="channel-name">@strictlydumpling</p>
+                    p>Mike Chen explores Asian cuisine and restaurants. Honest reviews and great energy.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="badge">Reviews</span>
+                        <span class="badge">Asian Food</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Travel -->
+            <div class="video-card category-item" data-category="travel">
+                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1523906834658-6e24e2384f88?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="play-button" data-video-url="https://youtube.com/watch?v=example7">▶️</div>
+                </div>
+                <div class="video-info">
+                    <h4>Eater</h4>
+                    <p class="channel-name">@eater</p>
+                    <p>Food culture, city guides, and "Best Food in..." series. Great for discovering new places.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="badge">Travel</span>
+                        <span class="badge">Guides</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card category-item" data-category="travel">
+                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="play-button" data-video-url="https://youtube.com/watch?v=example8">▶️</div>
+                </div>
+                <div class="video-info">
+                    <h4>Great Big Story</h4>
+                    <p class="channel-name">@greatbigstory</p>
+                    <p>Short documentaries on food traditions around the world. Beautifully filmed.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="badge">Travel</span>
+                        <span class="badge">Culture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why These Channels -->
+        <section style="margin: 4rem 0; background: var(--white); padding: 3rem; border-radius: 30px; box-shadow: 0 20px 40px var(--shadow);">
+            <h4 style="text-align: center; font-size: 2rem; color: var(--deep-blue); margin-bottom: 2rem;">Why Trizah Njeri Recommends These</h4>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔬</div>
+                    <h5>Educational Value</h5>
+                    <p>Channels that teach real food science and production techniques</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌟</div>
+                    <h5>Quality Content</h5>
+                    <p>High production value and accurate information</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+                    <h5>Global Perspective</h5>
+                    <p>Understanding food from different cultures</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">👩‍🍳</div>
+                    <h5>Practical Skills</h5>
+                    <p>Techniques you can actually use</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAN CITS -->
+        <div class="man-cits-section">
+            <div class="man-cits-logo">
+                MAN CITS
+                <span>Making Technology Simple</span>
+            </div>
+            <p class="man-cits-sub">Curated YouTube content for food lovers</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">The Food Curator</div>
+                <p>Curated with love by Trizah Njeri</p>
+                <p>Food Production Professional</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="videos.html">YouTube Picks</a></li>
+                    <li><a href="places.html">Food Directory</a></li>
+                    <li><a href="meals.html">Meal Ideas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Suggest</h4>
+                <ul>
+                    <li><a href="contact.html">Recommend a Channel</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© <span class="current-year">2025</span> The Food Curator. All rights reserved.</p>
+            <p>Made with 💙 for Trizah Njeri| MAN CITS</p>
+        </div>
+        <div class="developer-credit">
+    <p>🍽️ Developed with 💙 by <strong>Trizah Njeri</strong>  | <span class="man-cits-small" style="background: transparent; padding: 0;">MAN CITS</span></p>
+</div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | The Food Curator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>The Food Curator</h1>
+            <span>by Trizah Njeri</span>
+        </div>
+        
+        <div class="profile-section">
+            <img src="images/Trizah.jpg" alt="Trizah Njeri" class="profile-photo" onerror="this.src='https://via.placeholder.com/50/3b82f6/ffffff?text=TN'">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="places.html">Food Places</a></li>
+                    <li><a href="varieties.html">Food Varieties</a></li>
+                    <li><a href="meals.html">Meal Ideas</a></li>
+                    <li><a href="work.html">Her Work</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div style="text-align: right; margin-bottom: 1rem;">
+            <span class="man-cits-small">MAN CITS</span>
+        </div>
+
+        <div class="section-header">
+            <h3>📬 Get In Touch 📬</h3>
+            <p>Suggest a place, ask a question, or just say hello!</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 3rem 0;">
+            <!-- Contact Info (unchanged) -->
+            <div>
+                <div style="background: var(--white); border-radius: 30px; padding: 2.5rem; box-shadow: 0 20px 40px var(--shadow); height: 100%;">
+                    <h4 style="color: var(--deep-blue); font-size: 1.8rem; margin-bottom: 2rem;">Let's Connect</h4>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="background: var(--sky-soft); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">👩‍🍳</div>
+                            <div>
+                                <h5 style="color: var(--deep-blue);">Trizah Njeri</h5>
+                                <p style="color: var(--gray-600);">Food Production Professional</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="background: var(--sky-soft); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">📧</div>
+                            <div>
+                                <h5 style="color: var(--deep-blue);">Email</h5>
+                                <p>tevinmulinge48@gmail.com </p> <!-- ← replace with real if ready -->
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="background: var(--sky-soft); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">📍</div>
+                            <div>
+                                <h5 style="color: var(--deep-blue);">Based in</h5>
+                                <p>Nairobi City</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--bg-soft); padding: 1.5rem; border-radius: 16px; border-left: 6px solid var(--medium-blue);">
+                        <p style="font-style: italic;">"I'd love to hear about your favorite food places! Every suggestion helps make this directory better for everyone."</p>
+                        <p style="margin-top: 1rem; font-weight: 600;">— Trizah Njeri</p>
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <h5 style="color: var(--deep-blue); margin-bottom: 1rem;">💡 What to suggest:</h5>
+                        <ul style="list-style-position: inside; color: var(--gray-600);">
+                            <li>Restaurants for any meal</li>
+                            <li>Great picnic spots</li>
+                            <li>Malls with good food courts</li>
+                            <li>YouTube channels she should check</li>
+                            <li>Food varieties to add</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Suggestion Form - NOW CONNECTED TO FORMSPREE -->
+            <div>
+                <div class="form-container">
+                    <h4 style="color: var(--deep-blue); font-size: 1.8rem; margin-bottom: 2rem; text-align: center;">Suggest a Place</h4>
+                    
+                    <form id="suggestionForm" action="https://formspree.io/f/xojnzpro" method="POST">
+                        <!-- Hidden fields for better email subject & redirect -->
+                        <input type="hidden" name="_subject" value="🍽️ New Food Place Suggestion from Website">
+                        <input type="hidden" name="_next" value="thanks.html"> <!-- redirects to thanks.html after submit -->
+                        <input type="hidden" name="_gotcha" style="display:none"> <!-- spam protection -->
+
+                        <div class="form-group">
+                            <label for="placeName">Place/Restaurant Name *</label>
+                            <input type="text" id="placeName" name="Place Name" required placeholder="e.g., Sunrise Cafe">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="placeLocation">Location/Address *</label>
+                                <input type="text" id="placeLocation" name="Location" required placeholder="Street, area, Nairobi">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="placeCategory">Category *</label>
+                                <select id="placeCategory" name="Category" required>
+                                    <option value="">Select one</option>
+                                    <option value="breakfast">Breakfast</option>
+                                    <option value="lunch">Lunch</option>
+                                    <option value="dinner">Dinner</option>
+                                    <option value="supper">Supper/Late Night</option>
+                                    <option value="picnic">Picnic Spot</option>
+                                    <option value="malls">Mall Food Court</option>
+                                    <option value="youtube">YouTube Channel</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="placeReason">Why do you recommend it? *</label>
+                            <textarea id="placeReason" name="Recommendation Reason" required placeholder="Tell us what's special... big portions, fresh ingredients, vibe, value, etc."></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="submitterName">Your Name</label>
+                                <input type="text" id="submitterName" name="Your Name" placeholder="Optional">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="submitterEmail">Your Email</label>
+                                <input type="email" id="submitterEmail" name="Your Email" placeholder="Optional - for follow-up">
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button type="submit" class="btn" style="padding: 1rem 3rem; font-size: 1.2rem;">Send Suggestion →</button>
+                        </div>
+                    </form>
+                    
+                    <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--gray-600);">
+                        Your suggestion will be emailed directly to Trizah
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- General Contact Form - also connected -->
+        <section style="margin: 4rem 0;">
+            <div class="section-header">
+                <h3>📝 Send a Message</h3>
+                <p>General inquiries, questions, or just to say hi!</p>
+            </div>
+            
+            <div class="form-container" style="max-width: 700px;">
+                <form id="contactForm" action="https://formspree.io/f/xojnzpro" method="POST">
+                    <input type="hidden" name="_subject" value="📝 New General Message from Website">
+                    <input type="hidden" name="_next" value="thanks.html">
+                    <input type="hidden" name="_gotcha" style="display:none">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Your Name *</label>
+                            <input type="text" id="contactName" name="Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Your Email *</label>
+                            <input type="email" id="contactEmail" name="Email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactSubject">Subject *</label>
+                        <input type="text" id="contactSubject" name="Subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" name="Message" required></textarea>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="man-cits-section">
+            <div class="man-cits-logo">
+                CITYZEN
+                <span>Making Technology Simple</span>
+            </div>
+            <p class="man-cits-sub">Your suggestions help Trizah Njeri grow her food directory</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">The Food Curator</div>
+                <p>Curated with love by Trizah Njeri</p>
+                <p>Food Production Professional</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Her</a></li>
+                    <li><a href="places.html">Food Directory</a></li>
+                    <li><a href="contact.html">Suggest a Place</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="videos.html">YouTube Picks</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© <span class="current-year">2025</span> The Food Curator. All rights reserved.</p>
+            <p>Made with 💙 for Trizah Njeri | Powered by Man city</p>
+        </div>
+        <div class="developer-credit">
+            <p>🍽️ Developed with 💙 by <strong>Tevin Mulinge</strong> | <span class="man-cits-small" style="background: transparent; padding: 0;">MAN CITS</span></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
